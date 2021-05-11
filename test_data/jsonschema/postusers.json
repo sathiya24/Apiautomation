@@ -8,18 +8,22 @@
       "job": {
         "type": "string"
       },
-      "updatedAt": {
+      "id": {
+        "type": "string"
+      },
+      "createdAt": {
         "type": "string"
       }
     },
     "required": [
       "name",
       "job",
-      "updatedAt"
+      "id",
+      "createdAt"
     ]
   },
-   "invalid_schema": {
+  "invalid_schema":{
     "type": "object"
   }
-
 }
+ 
