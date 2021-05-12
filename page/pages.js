@@ -28,6 +28,10 @@ class LoginPage{
         return $(pageobjects.signin);
     }
 
+    get signout(){ 
+        return $(pageobjects.signout);
+    }
+
     login() {
         browser.url(url.baseurl);
         baseutils.doClick(this.supportlink);
@@ -35,6 +39,9 @@ class LoginPage{
         baseutils.doClick(this.continue);
         baseutils.doaddValue(this.Password,logindata.password);
         baseutils.doClick(this.signin);
+        baseutils.mouseover(this.supportlink);
+        baseutils.doClick(this.signout);
+
     }
 
     invalidlogin() {
@@ -44,7 +51,7 @@ class LoginPage{
         baseutils.doClick(this.continue);
         baseutils.doaddValue(this.Password1,logindata.password1);
         baseutils.doClick(this.signin);
-        browser.pause(10000);
+        browser.pause(5000);
 
     }
 }

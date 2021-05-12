@@ -9,5 +9,8 @@ class baseutil {
         element.waitForDisplayed();
         element.addValue(text);
     }
+    mouseover(element){
+        element.moveTo();
+    }
 }
 module.exports = new baseutil();

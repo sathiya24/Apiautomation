@@ -3,5 +3,10 @@ export default{
     username:"#ap_email",
     continue:"//input[@id='continue']",
     password:"#ap_password",
-    signin:"//input[@id='signInSubmit']"
+    signin:"//input[@id='signInSubmit']",
+    signout:"//span[text()='Sign Out']",
 };
+
+
+
+
