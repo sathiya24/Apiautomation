@@ -1,3 +1,3 @@
 module.exports = {
-    baseurl:'https://www.amazon.com'
+    baseurl:'https://www.amazon.in'
 };

@@ -6,7 +6,7 @@ describe('Amazon login application',() => {
     });
     
     it('should login with invalid credentials',() => {
-        amazonpage.invalidlogin();
-   });
+       amazonpage.invalidlogin();
+    });
     
 });
