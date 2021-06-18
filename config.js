@@ -7,7 +7,7 @@ export default {
 
     baseurl2:'https://reqes.in/',
     getuser1: 'api/users/200',
-    postuser1: 'api/users',
+    postuser1: '/users/',
     putuser1: '/api/users/2',
 
   }

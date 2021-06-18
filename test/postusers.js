@@ -33,13 +33,13 @@ describe('POST/users', () => {
     it('POST/create invalid details in page', async() => {
        const response = await url.post(config.postuser1)
        .type('application/json')
-       .send(
-         'name',inputbody.postbody2,
-         'job',inputbody.postbody3,
-       )
+       .send({
+         'name':inputbody.postbody2,
+         'job':inputbody.postbody3,
+       })
 
 
-      .expect(400)
+      .expect(404)
       .expect((res) => {
         //console.log(res)
        expect(res.body).to.be.jsonSchema(jsonschema.invalid_schema)
